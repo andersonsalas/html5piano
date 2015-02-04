@@ -1,0 +1,85 @@
+html,body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: url('bg.jpg') top center scroll repeat;
+}
+
+.container{
+    width: 1024px;
+    margin:0px auto;
+    background-image: -webkit-gradient(linear, top left, bottom right, color-stop(0, #4A4A4A), color-stop(1, #00050A));
+    background-image: -o-linear-gradient(top left, #4A4A4A, #00050A);
+    background-image: -moz-linear-gradient(top left, #4A4A4A, #00050A);
+    background-image: -webkit-linear-gradient(top left, #4A4A4A, #00050A);
+    background-image: linear-gradient(to bottom right, #4A4A4A, #00050A);
+    border-radius: 0px 0px 15px 15px;
+
+}
+.container-titulo{
+    width: 1024px;
+    margin:0px auto;
+    padding:20px 0px;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #474747), color-stop(1, #000000));
+    background-image: -o-linear-gradient(top, #474747, #000000);
+    background-image: -moz-linear-gradient(top, #474747, #000000);
+    background-image: -webkit-linear-gradient(top, #474747, #000000);
+    background-image: linear-gradient(to bottom, #474747, #000000)
+}
+
+.tecla-blanca{
+    width:60px;
+    height:320px;
+    border: solid 1px black;
+    background: white;
+    display: inline-block;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.tecla-negra:active{
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #000000), color-stop(1, #575757));
+    background-image: -o-linear-gradient(top, #000000, #575757);
+    background-image: -moz-linear-gradient(top, #000000, #575757);
+    background-image: -webkit-linear-gradient(top, #000000, #575757);
+    background-image: linear-gradient(to bottom, #000000, #575757);
+}
+
+.tecla-negra{
+    width: 45px;
+    height: 180px;
+    background: black;
+    border: solid 1px #4A4A4A;
+    margin-left: 35px;
+    position: absolute;
+    border-radius: 0px 0px 5px 5px;
+    z-index:99;
+}
+
+.tecla-blanca:hover, .tecla-negra:hover{
+    cursor: pointer;
+}
+.piano-container{
+    margin: 0px auto;
+    display:block;
+    text-align: center;
+}
+.area-tecla-blanca{
+    width: 60px;
+    height: 140px;
+    position: absolute;
+    margin-top:180px;
+    background:white;
+    z-index:0;
+}
+.area-tecla-blanca:active{
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0, #FFFFFF), color-stop(1, #BDBDBD));
+    background-image: -o-linear-gradient(top, #FFFFFF, #BDBDBD);
+    background-image: -moz-linear-gradient(top, #FFFFFF, #BDBDBD);
+    background-image: -webkit-linear-gradient(top, #FFFFFF, #BDBDBD);
+    background-image: linear-gradient(to bottom, #FFFFFF, #BDBDBD)
+}
+.centrar{
+    margin: 0px auto;
+    display:block;
+}
