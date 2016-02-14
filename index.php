@@ -13,8 +13,8 @@
         $sonidos = array('c','c-sharp','d','d-sharp','e','f','f-sharp','g','g-sharp','a','a-sharp','b');
         foreach($sonidos as $nota){
             ?>
-                <audio class="audio-<?= $nota;?>" controls>
-                  <source src="sounds/<?= $nota;?>.mp3" type="audio/mpeg">
+                <audio class="audio-<?php echo $nota;?>" controls>
+                  <source src="sounds/<?php echo $nota;?>.mp3" type="audio/mpeg">
                 </audio>
             <?php
         }
@@ -22,14 +22,14 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 <?php foreach($sonidos as $nota){ ?>
-                    $('.play-<?= $nota;?>').mouseup(function(){
-                        $(".audio-<?= $nota;?>")[0].play();
+                    $('.play-<?php echo $nota;?>').mouseup(function(){
+                        $(".audio-<?php echo $nota;?>")[0].play();
                     });
-                    $('.play-<?= $nota;?>').mousedown(function(){
+                    $('.play-<?php echo $nota;?>').mousedown(function(){
 
-                        $(".audio-<?= $nota;?>")[0].pause();
+                        $(".audio-<?php echo $nota;?>")[0].pause();
                         setTimeout(function(){
-                            $(".audio-<?= $nota;?>")[0].currentTime = 0;
+                            $(".audio-<?php echo $nota;?>")[0].currentTime = 0;
                         },1);
 
                     });
